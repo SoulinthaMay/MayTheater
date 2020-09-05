@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAD03DB3-0F3E-484F-9340-256EA6E48E07}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MayTheater.My.MyApplication</StartupObject>
+    <RootNamespace>MayTheater</RootNamespace>
+    <AssemblyName>MayTheater</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MayTheater.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MayTheater.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.18\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReport123.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport123.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportCondition.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCondition.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportDaily.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportDaily.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet123.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet123.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetBill.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetBill.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBModule.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport.Designer.vb">
+      <DependentUpon>FormReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSellReport.Designer.vb">
+      <DependentUpon>FormSellReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSellReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExample.Designer.vb">
+      <DependentUpon>FormExample.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormExample.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMemInfo.Designer.vb">
+      <DependentUpon>FormMemInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMemInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShowTicket.Designer.vb">
+      <DependentUpon>FormShowTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormShowTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTest1.Designer.vb">
+      <DependentUpon>FormTest1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTest1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTicket.Designer.vb">
+      <DependentUpon>FormTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCard.Designer.vb">
+      <DependentUpon>FrmCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmployee.Designer.vb">
+      <DependentUpon>FrmEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManage.Designer.vb">
+      <DependentUpon>frmManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMember.Designer.vb">
+      <DependentUpon>FrmMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovie.Designer.vb">
+      <DependentUpon>FrmMovie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMovie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeat.Designer.vb">
+      <DependentUpon>FrmSeat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmType.Designer.vb">
+      <DependentUpon>FrmType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrystalReport123.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport123.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCondition.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCondition.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportDaily.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportDaily.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport.resx">
+      <DependentUpon>FormReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSellReport.resx">
+      <DependentUpon>FormSellReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExample.resx">
+      <DependentUpon>FormExample.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMemInfo.resx">
+      <DependentUpon>FormMemInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShowTicket.resx">
+      <DependentUpon>FormShowTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTest1.resx">
+      <DependentUpon>FormTest1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTicket.resx">
+      <DependentUpon>FormTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCard.resx">
+      <DependentUpon>FrmCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmployee.resx">
+      <DependentUpon>FrmEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManage.resx">
+      <DependentUpon>frmManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMember.resx">
+      <DependentUpon>FrmMember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMovie.resx">
+      <DependentUpon>FrmMovie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeat.resx">
+      <DependentUpon>FrmSeat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmType.resx">
+      <DependentUpon>FrmType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet123.xsc">
+      <DependentUpon>DataSet123.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet123.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet123.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet123.xss">
+      <DependentUpon>DataSet123.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetBill.xsc">
+      <DependentUpon>DataSetBill.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetBill.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetBill.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetBill.xss">
+      <DependentUpon>DataSetBill.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0f3ee482-5c9e-45a9-b8f2-b6f13240e91f_200x200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\membership %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\membership.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie-tickets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chooseHoney.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choosenormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-symbol-of-three-parallel-lines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\876d09e6-055e-4fc6-b66a-d3e595a887b7_200x200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hiroshima-japan-flag-symbol %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hiroshima-japan-flag-symbol %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinema-chair %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinema-chair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1Fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HFill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choose1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chooseH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewHoney.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chairChoose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullHoney.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\honeyChoose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hiroshima-japan-flag-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

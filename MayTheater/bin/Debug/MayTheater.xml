@@ -1,0 +1,326 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MayTheater
+</name>
+</assembly>
+<members>
+<member name="T:MayTheater.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources._0f3ee482_5c9e_45a9_b8f2_b6f13240e91f_200x200">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.chair">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.chair2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.chairChoose">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.fullHoney">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.fullnormal">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.hiroshima_japan_flag_symbol">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.hiroshima_japan_flag_symbol__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.hiroshima_japan_flag_symbol__2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.honeyChoose">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.LOGOS">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.magnifying_glass">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.membership">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.membership__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.menu">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.menu_symbol_of_three_parallel_lines">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.movie">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.movie_tickets">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.NewHoney">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.plus">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MayTheater.My.Resources.Resources.search">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:MayTheater.DataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:MayTheater.DataSet1.movieDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:MayTheater.DataSet1.movieRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:MayTheater.DataSet1.movieRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:MayTheater.DataSet1TableAdapters.movieTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:MayTheater.DataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:MayTheater.DataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(MayTheater.DataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:MayTheater.DataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(MayTheater.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:MayTheater.DataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(MayTheater.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:MayTheater.DataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:MayTheater.DataSet1TableAdapters.TableAdapterManager.UpdateAll(MayTheater.DataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:MayTheater.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:MayTheater.DataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:MayTheater.DataSet123">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:MayTheater.DataSet123.selldetailDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:MayTheater.DataSet123.selldetailRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:MayTheater.DataSet123.selldetailRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:MayTheater.DataSet123TableAdapters.selldetailTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:MayTheater.DataSet123TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:MayTheater.DataSet123TableAdapters.TableAdapterManager.UpdateUpdatedRows(MayTheater.DataSet123,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:MayTheater.DataSet123TableAdapters.TableAdapterManager.UpdateInsertedRows(MayTheater.DataSet123,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:MayTheater.DataSet123TableAdapters.TableAdapterManager.UpdateDeletedRows(MayTheater.DataSet123,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:MayTheater.DataSet123TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:MayTheater.DataSet123TableAdapters.TableAdapterManager.UpdateAll(MayTheater.DataSet123)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:MayTheater.DataSet123TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:MayTheater.DataSet123TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:MayTheater.DataSetBill">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:MayTheater.DataSetBill.billDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:MayTheater.DataSetBill.billRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:MayTheater.DataSetBill.billRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:MayTheater.DataSetBillTableAdapters.billTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:MayTheater.DataSetBillTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:MayTheater.DataSetBillTableAdapters.TableAdapterManager.UpdateUpdatedRows(MayTheater.DataSetBill,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:MayTheater.DataSetBillTableAdapters.TableAdapterManager.UpdateInsertedRows(MayTheater.DataSetBill,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:MayTheater.DataSetBillTableAdapters.TableAdapterManager.UpdateDeletedRows(MayTheater.DataSetBill,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:MayTheater.DataSetBillTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:MayTheater.DataSetBillTableAdapters.TableAdapterManager.UpdateAll(MayTheater.DataSetBill)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:MayTheater.DataSetBillTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:MayTheater.DataSetBillTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
